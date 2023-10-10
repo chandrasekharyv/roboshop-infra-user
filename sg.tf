@@ -1,5 +1,5 @@
 module "allow_all_sg" {
-  source = "../terraform-securitygroup"
+  source = "git::https://github.com/chandrasekharyv/terraform-securitygroup.git"
   sg_name = var.sg_name
   sg_description = "Allowing all ports from internet"
   sg_ingress_rules = var.sg_ingress_rules
